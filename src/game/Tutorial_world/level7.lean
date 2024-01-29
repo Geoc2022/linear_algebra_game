@@ -5,6 +5,7 @@ local attribute [instance, priority 10] classical.prop_decidable -- hide
 ¬ P ↔ P → false
 -/
 
+namespace tutorial
 lemma not_iff_imp_false (P : Prop) : ¬ P ↔ P → false := iff.rfl -- hide
 
 /-
@@ -83,3 +84,5 @@ a false one) which you just want to simplify to `false`.
 
 ## Further Reading (Optional):
 https://leanprover.github.io/logic_and_proof/classical_reasoning.html -/
+
+end tutorial

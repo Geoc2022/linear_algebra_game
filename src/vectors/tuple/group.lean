@@ -3,6 +3,7 @@ import vectors.tuple.tactics
 import algebra.group.basic
 
 namespace tuple
+namespace sol
 
 universe u
 variables {α : Type u} [add_comm_group α]
@@ -62,10 +63,10 @@ protected def nsmul {n : ℕ} : ℕ → α ^ n → α ^ n
 | 0 _ := 0
 | (n+1) v := v + nsmul n v
 
-protected lemma nsmul_zero {n : ℕ} : ∀ (v : α ^ n), (tuple.nsmul 0 v = 0) := λ v, rfl
+protected lemma nsmul_zero {n : ℕ} : ∀ (v : α ^ n), (tuple.sol.nsmul 0 v = 0) := λ v, rfl
 
 protected lemma nsmul_succ {n : ℕ}
-  : (∀ (c : ℕ) (v : α ^ n), tuple.nsmul c.succ v = v + tuple.nsmul c v) := λ c v, rfl
+  : (∀ (c : ℕ) (v : α ^ n), tuple.sol.nsmul c.succ v = v + tuple.sol.nsmul c v) := λ c v, rfl
 
 
 lemma sub_eq_add_neg {n : ℕ} : (∀ (v u : α ^ n), v - u = v + -u) := begin
@@ -84,17 +85,17 @@ end
 
 
 protected def zsmul {n : ℕ} : ℤ → α ^ n → α ^ n
-| (int.of_nat c) := tuple.nsmul c
-| (int.neg_succ_of_nat c) := -tuple.nsmul (c+1)
+| (int.of_nat c) := tuple.sol.nsmul c
+| (int.neg_succ_of_nat c) := -tuple.sol.nsmul (c+1)
 
-protected lemma zsmul_zero {n : ℕ} : ∀ (v : α ^ n), (tuple.zsmul 0 v = 0) := λ v, rfl
+protected lemma zsmul_zero {n : ℕ} : ∀ (v : α ^ n), (tuple.sol.zsmul 0 v = 0) := λ v, rfl
 
 protected lemma zsmul_succ {n : ℕ}
   : (∀ (c : ℕ) (v : α ^ n),
-    tuple.zsmul (int.of_nat c.succ) v = v + tuple.zsmul (int.of_nat c) v) := λ c v, rfl
+    tuple.sol.zsmul (int.of_nat c.succ) v = v + tuple.sol.zsmul (int.of_nat c) v) := λ c v, rfl
 
 protected lemma zsmul_neg {n : ℕ} : (∀ (c : ℕ) (v : α ^ n),
-  tuple.zsmul -[1+ c] v = -tuple.zsmul ↑(c.succ) v) := λ c v, rfl
+  tuple.sol.zsmul -[1+ c] v = -tuple.sol.zsmul ↑(c.succ) v) := λ c v, rfl
 
 
 lemma add_left_neg {n : ℕ} : ∀ (v : α ^ n), -v + v = 0 := begin
@@ -113,19 +114,19 @@ instance {n : ℕ} : add_comm_group (α ^ n) := ⟨
   tuple.zero,
   zero_add,
   add_zero,
-  tuple.nsmul,
-  tuple.nsmul_zero,
-  tuple.nsmul_succ,
+  tuple.sol.nsmul,
+  tuple.sol.nsmul_zero,
+  tuple.sol.nsmul_succ,
   tuple.neg,
   tuple.sub,
   sub_eq_add_neg,
-  tuple.zsmul,
-  tuple.zsmul_zero,
-  tuple.zsmul_succ,
-  tuple.zsmul_neg,
+  tuple.sol.zsmul,
+  tuple.sol.zsmul_zero,
+  tuple.sol.zsmul_succ,
+  tuple.sol.zsmul_neg,
   add_left_neg,
   add_comm,
   ⟩
 
-
+end sol
 end tuple

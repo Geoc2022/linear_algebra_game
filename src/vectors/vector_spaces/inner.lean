@@ -5,6 +5,7 @@ import analysis.inner_product_space.basic
 import vectors.vector_spaces.linearity
 
 namespace vector_spaces
+namespace real_complex
 
 
 open_locale complex_conjugate
@@ -20,9 +21,9 @@ class inner_prod_space (𝕍 : Type*) (𝔽 : Type*) [is_R_or_C 𝔽] extends ve
 def orthogonal {𝕍 : Type*} {𝔽 : Type*} [is_R_or_C 𝔽] [inner_prod_space 𝕍 𝔽] (x y : 𝕍) : Prop :=
   inner x y = (0 : 𝔽)
 
-infix ` ⊥ `:63 := orthogonal
-infix ` ⟂ `:63 := orthogonal
+-- infix ` ⊥ `:63 := orthogonal
+-- infix ` ⟂ `:63 := orthogonal
 -- for some reason the vscode lean extension has \bot and \perp being different
 
-
+end real_complex
 end vector_spaces

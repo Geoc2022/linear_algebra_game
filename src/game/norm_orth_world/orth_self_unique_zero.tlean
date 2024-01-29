@@ -1,0 +1,148 @@
+IMPORT 2 init -1 game.norm_orth_world.norm_neg_eq_neg -1 
+1 #NS 0 tuple
+2 #NS 1 orth_self_unique_zero
+3 #NS 0 n
+4 #NS 0 nat
+0 #EC 4
+5 #NS 0 x
+6 #NS 0 has_pow
+7 #NS 6 pow
+1 #US 0
+1 #EC 7 1 0
+2 #ES 1
+3 #EA 1 2
+4 #EA 3 0
+8 #NS 4 has_pow
+5 #EC 8 0
+6 #EA 4 5
+9 #NS 0 real
+7 #EC 9
+8 #EA 6 7
+9 #EV 0
+10 #EA 8 9
+10 #NS 0 ᾰ
+11 #NS 1 orthogonal
+11 #EC 11 0
+12 #EA 11 7
+12 #NS 9 has_add
+13 #EC 12
+14 #EA 12 13
+13 #NS 9 has_mul
+15 #EC 13
+16 #EA 14 15
+14 #NS 9 has_zero
+17 #EC 14
+18 #EA 16 17
+19 #EV 1
+20 #EA 18 19
+21 #EA 20 9
+22 #EA 21 9
+15 #NS 0 eq
+23 #EC 15 1
+24 #EV 2
+25 #EA 8 24
+26 #EA 23 25
+27 #EA 26 19
+16 #NS 0 has_zero
+17 #NS 16 zero
+28 #EC 17 0
+29 #EA 28 25
+18 #NS 1 has_pow
+19 #NS 18 pow
+20 #NS 19 has_zero
+30 #EC 20 0
+31 #EA 30 7
+32 #EA 31 17
+33 #EA 32 24
+34 #EA 29 33
+35 #EA 27 34
+36 #EP #BD 10 22 35
+37 #EP #BD 5 10 36
+38 #EP #BI 3 0 37
+21 #NS 0 perp
+22 #NS 15 mp
+39 #EC 22 0
+40 #EA 23 7
+23 #NS 1 dot_product
+41 #EC 23 0
+42 #EA 41 7
+43 #EA 42 13
+44 #EA 43 15
+45 #EA 44 17
+46 #EA 45 24
+47 #EA 46 19
+48 #EA 47 19
+49 #EA 40 48
+50 #EA 28 7
+51 #EA 50 17
+52 #EA 49 51
+53 #EA 39 52
+54 #EA 53 35
+24 #NS 0 id_tag
+55 #EC 24
+25 #NS 0 tactic
+26 #NS 25 id_tag
+27 #NS 26 rw
+56 #EC 27
+57 #EA 55 56
+58 #ES 0
+59 #EA 23 58
+60 #EA 59 52
+61 #EA 60 35
+62 #EA 57 61
+28 #NS 15 rec
+63 #EC 28 0 1
+64 #EA 63 58
+65 #EA 64 52
+29 #NS 0 _a
+66 #EV 3
+67 #EA 45 66
+68 #EA 67 24
+69 #EA 68 24
+70 #EA 40 69
+71 #EA 70 51
+72 #EA 59 71
+73 #EA 72 9
+74 #EL #BD 29 58 73
+75 #EA 65 74
+30 #NS 15 refl
+76 #EC 30 1
+77 #EA 76 58
+78 #EA 77 52
+79 #EA 75 78
+80 #EA 79 35
+31 #NS 0 propext
+81 #EC 31
+82 #EA 81 52
+83 #EA 82 35
+32 #NS 1 dot_self_zero
+84 #EC 32
+85 #EA 84 24
+86 #EA 85 19
+87 #EA 83 86
+88 #EA 80 87
+89 #EA 62 88
+90 #EA 54 89
+91 #EA 18 24
+92 #EA 91 19
+93 #EA 92 19
+94 #EA 39 93
+95 #EA 94 52
+33 #NS 11 equations
+34 #NS 33 _eqn_1
+96 #EC 34 0
+97 #EA 96 7
+98 #EA 97 13
+99 #EA 98 15
+100 #EA 99 17
+101 #EA 100 24
+102 #EA 101 19
+103 #EA 102 19
+104 #EA 95 103
+105 #EA 104 9
+106 #EA 90 105
+107 #EL #BD 21 22 106
+108 #EL #BD 5 10 107
+109 #EL #BD 3 0 108
+#DEF 2 1 O 38 109
+#POS_INFO 2 27 6

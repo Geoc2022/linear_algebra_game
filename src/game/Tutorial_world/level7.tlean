@@ -1,0 +1,116 @@
+IMPORT 2 init -1 tactic.tauto -1 
+1 #NS 0 tutorial
+#NEW_NAMESPACE 1
+2 #NS 1 not_iff_imp_false
+3 #NS 0 P
+0 #ES 0
+4 #NS 0 iff
+1 #EC 4
+5 #NS 0 not
+2 #EC 5
+3 #EV 0
+4 #EA 2 3
+5 #EA 1 4
+6 #NS 0 ᾰ
+7 #NS 0 false
+6 #EC 7
+7 #EP #BD 6 3 6
+8 #EA 5 7
+9 #EP #BD 3 0 8
+8 #NS 4 rfl
+10 #EC 8
+11 #EA 10 4
+12 #EL #BD 3 0 11
+#DEF 2 1 O 9 12
+#POS_INFO 2 9 6
+9 #NS 0 _refl_lemma
+#ATTR 9 1000 2 0 
+10 #NS 1 contra
+11 #NS 0 Q
+12 #NS 0 and
+13 #EC 12
+14 #EV 1
+15 #EA 13 14
+16 #EA 2 14
+17 #EA 15 16
+18 #EP #BD 6 17 14
+19 #EP #BD 11 0 18
+20 #EP #BD 3 0 19
+13 #NS 0 h
+14 #NS 12 dcases_on
+21 #EC 14 0
+22 #EV 2
+23 #EA 21 22
+24 #EA 2 22
+25 #EA 23 24
+26 #EA 13 22
+27 #EA 26 24
+28 #EL #BD 13 27 22
+29 #EA 25 28
+30 #EA 29 3
+15 #NS 0 p
+16 #NS 0 np
+31 #EV 3
+32 #EA 2 31
+17 #NS 7 rec
+33 #EC 17 0
+34 #EA 33 31
+18 #NS 0 eq
+19 #NS 18 mp
+35 #EC 19 0
+36 #EV 4
+37 #EA 2 36
+38 #EA 35 37
+39 #EP #BD 6 36 6
+40 #EA 38 39
+20 #NS 0 id_tag
+41 #EC 20
+21 #NS 0 tactic
+22 #NS 21 id_tag
+23 #NS 22 rw
+42 #EC 23
+43 #EA 41 42
+1 #US 0
+44 #EC 18 1
+45 #EA 44 0
+46 #EA 45 37
+47 #EA 46 39
+48 #EA 43 47
+24 #NS 18 rec
+49 #EC 24 0 1
+50 #EA 49 0
+51 #EA 50 37
+25 #NS 0 _a
+52 #EV 5
+53 #EA 2 52
+54 #EA 45 53
+55 #EA 54 3
+56 #EL #BD 25 0 55
+57 #EA 51 56
+26 #NS 18 refl
+58 #EC 26 1
+59 #EA 58 0
+60 #EA 59 37
+61 #EA 57 60
+62 #EA 61 39
+27 #NS 0 propext
+63 #EC 27
+64 #EA 63 37
+65 #EA 64 39
+66 #EC 2
+67 #EA 66 36
+68 #EA 65 67
+69 #EA 62 68
+70 #EA 48 69
+71 #EA 40 70
+72 #EA 71 3
+73 #EA 72 14
+74 #EA 34 73
+75 #EL #BD 16 32 74
+76 #EL #BD 15 22 75
+77 #EA 30 76
+78 #EL #BD 13 17 77
+79 #EL #BD 11 0 78
+80 #EL #BD 3 0 79
+#DEF 10 1 O 20 80
+#POS_INFO 10 43 6

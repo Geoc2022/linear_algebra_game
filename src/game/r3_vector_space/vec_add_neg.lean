@@ -1,7 +1,7 @@
 import game.r3_vector_space.add_zero --hide
 
 namespace tuple -- hide
-
+namespace r3 -- hide
 
 /- 
 
@@ -22,4 +22,5 @@ begin
   simpa,
 end
 
+end r3 -- hide
 end tuple -- hide

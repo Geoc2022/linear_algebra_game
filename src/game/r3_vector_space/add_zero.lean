@@ -1,6 +1,6 @@
 import game.r3_vector_space.vec_comm--hide
 namespace tuple -- hide
-
+namespace r3 -- hide
 
 /- 
 
@@ -25,4 +25,5 @@ begin
   simp,
 end
 
+end r3 -- hide
 end tuple -- hide

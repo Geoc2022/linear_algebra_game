@@ -2,7 +2,7 @@ import vectors.tuple -- hide
 import data.real.basic --hide
 import vectors.tuple.tactics --hide
 namespace tuple -- hide
-
+namespace r3 -- hide
 
 /- 
 
@@ -26,4 +26,5 @@ begin
   exact ⟨by ring, by ring, by ring⟩,
 end
 
+end r3 -- hide
 end tuple -- hide

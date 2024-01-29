@@ -61,7 +61,7 @@ you can also `rw h` if `h : P ↔ Q`.
 
 -/ 
 
-
+namespace tutorial
 /- Lemma : no-side-bar
 If $P$ is a proposition then $P\implies P$.
 -/
@@ -93,3 +93,5 @@ hypothesis h (a proof) on it.
 
 
 -/
+
+end tutorial

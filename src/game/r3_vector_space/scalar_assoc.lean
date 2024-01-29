@@ -1,6 +1,6 @@
 import game.r3_vector_space.scalar_dist_1
 namespace tuple -- hide
-
+namespace r3 -- hide
 
 /- 
 
@@ -26,4 +26,5 @@ begin
   exact ⟨by ring, by ring, by ring⟩,
 end
 
+end r3 -- hide
 end tuple -- hide
